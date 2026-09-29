@@ -1,0 +1,16 @@
+# Test repository
+clean-demo/
+
+# Generated analyzer reports
+devops_debt_report.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+
+# IDE files
+.vscode/
