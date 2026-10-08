@@ -1,11 +1,13 @@
 FROM python:3.12-slim
 
-WORKDIR /app
+WORKDIR /project
 
-COPY app/app.py .
+COPY analyzer.py .
+COPY terraform/ ./terraform/
+COPY .github/ ./.github/
 
-RUN useradd -m appuser
+RUN useradd -m appuser && chown -R appuser:appuser /project
 
 USER appuser
 
-CMD ["python", "app.py"]
+CMD ["python", "analyzer.py"]

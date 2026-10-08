@@ -1,0 +1,9 @@
+clean-demo/
+.git/
+__pycache__/
+*.pyc
+devops_debt_report.json
+devops_debt_history.json
+venv/
+.venv/
+.env
