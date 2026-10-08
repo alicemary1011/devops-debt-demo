@@ -20,4 +20,4 @@ jobs:
         run: docker build -t devops-debt-analyzer .
 
       - name: Run DevOps debt analyzer
-        run: docker run --rm devops-debt-analyzer
+        run: docker run --rm devops-debt-analyzer python analyzer.py
